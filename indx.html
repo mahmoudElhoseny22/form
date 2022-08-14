@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>بلاغات</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="image/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	<div class="all-text">
+	  <div class="bg">
+	 <div class="container">
+	 	<div class="conect">
+	 	<div class="all">
+			<ul style="margin: -15px 27%;">
+				<li>إمارة منطقة المدينة المنورة </li>
+				<li>إدارة الازمات المطورة </li>
+			</ul>
+			 <div class="top">
+				<img src="image/logo.png" width="135px" height="135px"   style="margin: -31px 12px;;">
+			</div>
+
+		 </div>	 
+				<div class="title">
+				   <h2>تقديم بلاغات</h2>
+				</div>
+				<!-- contact2 -->
+				<form class="contact">
+					<div class="title">
+						<h4>بيانات المستفيد</h4>
+						<div class="line">
+
+						</div>
+					 </div>
+					<div class="input1">
+						<h5>الاسم رباعي</h5>
+						<input id="username" class="input2" type="text" name="username" placeholder="الاول">
+						<input id="username" class="input2" type="text" name="username" placeholder="الثاني">
+						<input id="username" class="input2" type="text" name="username" placeholder="الثالث">
+						<input id="username" class="input2" type="text" name="username" placeholder="الرابع">
+						<input id="namber" class="input001" type="tel" name="namber" placeholder="الرقم القومي" >
+					</div>
+					<div class="input2">
+					<label for="username" style="margin: 0px 6px;">الهوية</label>
+					<select class="select1">
+						<option>اختر</option>
+						<option>جواز سفر</option>
+						<option>بطاقة سخصية</option>
+						<option>رخصة سيارة</option>
+					</select>
+					<label for="username" style="margin: 0px 2px;">الجنسية</label>
+					<select class="select1">
+					<option>اختر </option>
+					<option>سعودية</option>
+					<option>إماراتية</option>
+					<option>كويتية</option>
+				 </select>
+				</div>
+			<div class="input3">	
+				<label for="username">الجوال</label>
+				<input id="namber" class="input001" type="tel" name="namber" placeholder="ادخل رقم الجوال" >
+				<label for="username" style="margin: 0 37px;">العمر</label>
+				<input required type="tel" step="any" name="age" ng-model="user.age" min="2" max="90" placeholder="1"  style="width: 32%;"/>
+			</div>
+			</form>
+			<!-- end -->
+
+			<!-- contact2 -->
+			<form class="contact2">
+				<div class="title">
+					<h4>بيانات البلاغ</h4>
+					<div class="line">
+					</div>
+				 </div>
+				<div class="input1">
+					<label for="username">نوع البلاغ</label>
+					<select class="select1">
+						<option>اختر</option>
+						<option>نوع البلاغ</option>
+						<option>نوع البلاغ</option>
+						<option>نوع البلاغ</option>
+						<option>نوع البلاغ</option>
+					</select>
+					<label for="username">رفع الملفات</label>
+					<input type="file" class="button" name="image" style="width: 26%;">
+				</div>
+				<div class="input2">
+				<textarea rows="4" cols="50" name="comment" form="usrform">وصف البلاغ هنا</textarea>
+				<textarea rows="4" cols="50" name="comment" form="usrform" >اكتب العنوان بالتفصيل</textarea>
+			</div>
+		<div class="input3">	
+			<!-- START CAPTCHA -->
+				<div class="capbox">
+
+				<div id="CaptchaDiv"></div>
+
+				<div class="capbox-inner">
+				Type the above number:<br>
+
+				<input type="hidden" id="txtCaptcha">
+				<input type="text" name="CaptchaInput" id="CaptchaInput" size="15"><br>
+				</div>
+				</div>
+				<br><br>
+			<!-- END CAPTCHA -->
+			<input type="submit" value="إرسال" style="margin: 33px 34%;background-color: #45a049;color: #fff;">
+			<!--foote_bottom_ul_amrc ends here-->
+			
+				<ul class="social_footer_ul">
+				<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+				<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+				</ul>
+				<p class="text-center">جميع الحقوق محفوظة &copy 2020 <a href="#" style="color: #000;margin: 16px 0;;">إدارة الازمات المطورة</a></p>
+			<!--social_footer_ul ends here-->
+		</form>
+		</div>
+		</div>
+	</div>
+	</div>
+	<script type="text/javascript">
+
+		// Captcha Script
+		
+		function checkform(theform){
+		var why = "";
+		
+		if(theform.CaptchaInput.value == ""){
+		why += "- Please Enter CAPTCHA Code.\n";
+		}
+		if(theform.CaptchaInput.value != ""){
+		if(ValidCaptcha(theform.CaptchaInput.value) == false){
+		why += "- The CAPTCHA Code Does Not Match.\n";
+		}
+		}
+		if(why != ""){
+		alert(why);
+		return false;
+		}
+		}
+		
+		var a = Math.ceil(Math.random() * 9)+ '';
+		var b = Math.ceil(Math.random() * 9)+ '';
+		var c = Math.ceil(Math.random() * 9)+ '';
+		var d = Math.ceil(Math.random() * 9)+ '';
+		var e = Math.ceil(Math.random() * 9)+ '';
+		
+		var code = a + b + c + d + e;
+		document.getElementById("txtCaptcha").value = code;
+		document.getElementById("CaptchaDiv").innerHTML = code;
+		
+		// Validate input against the generated number
+		function ValidCaptcha(){
+		var str1 = removeSpaces(document.getElementById('txtCaptcha').value);
+		var str2 = removeSpaces(document.getElementById('CaptchaInput').value);
+		if (str1 == str2){
+		return true;
+		}else{
+		return false;
+		}
+		}
+		
+		// Remove the spaces from the entered and generated code
+		function removeSpaces(string){
+		return string.split(' ').join('');
+		}
+		</script
+</body>
+</html>
